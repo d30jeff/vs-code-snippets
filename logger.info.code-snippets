@@ -1,0 +1,7 @@
+{
+  "Log info messages": {
+    "prefix": "info",
+    "body": ["this.logger.info($1)"],
+    "description": "Signale instance info logger"
+  }
+}
