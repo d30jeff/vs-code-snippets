@@ -1,0 +1,19 @@
+{
+  "Controller method": {
+    "prefix": "method",
+    "body": [
+    "async $1(",
+    "  @Request() request: ExpressRequest,",
+    "  @Response() response: ExpressResponse,",
+    "  @Next() next: ExpressNextFunction",
+    ") {",
+    "  try {",
+    "",
+    "  } catch (error) {",
+    "     this.logger.fatal(error);",
+    "     next(error);",
+    "  }",
+    "}",
+    ]
+  }
+}
