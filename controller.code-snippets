@@ -20,7 +20,7 @@
       "} from '@decorators/express';",
       "import { Logger } from '@providers/logger.provider';",
       "import { validate } from '@utils/validate';",
-      "import { services } from '@services/index';",
+      "import { services } from '@services/index.service';",
       "",
       "@Controller('/$1')",
       "export class $2Controller {",
