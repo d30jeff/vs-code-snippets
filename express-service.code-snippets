@@ -1,0 +1,15 @@
+{
+  "Repository class template": {
+    "prefix": "service",
+    "body": [
+      "import { Logger } from '@providers/logger.provider';",
+      "",
+      "export class $1Service {",
+      "  private readonly logger = Logger('$1Service');",
+      "",
+      "  $2",
+      "}",
+
+    ]
+  }
+}
