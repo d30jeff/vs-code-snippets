@@ -23,7 +23,7 @@
       "import { services } from '@services/index.service';",
       "",
       "@Controller('/$1')",
-      "export class $2Controller {",
+      "export class ${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g}Controller {",
       "  private readonly logger = Logger('$2Controller');",
       "  ",
       "  @Post('/')",

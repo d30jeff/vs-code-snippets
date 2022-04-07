@@ -4,10 +4,9 @@
     "body": [
       "import { Logger } from '@providers/logger.provider';",
       "",
-      "export class $1Service {",
-      "  private readonly logger = Logger('$1Service');",
-      "",
-      "  $2",
+      "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service {",
+      "  private readonly logger = Logger('${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service');",
+      "  $1",
       "}",
 
     ]
