@@ -2,6 +2,7 @@
   "Controller class template": {
     "prefix": "controller",
     "body": [
+      "import { serializePaginationParams } from '@utils/pagination.util';",
       "import {",
       "  ExpressNextFunction,",
       "  ExpressRequest,",
@@ -20,11 +21,10 @@
       "} from '@decorators/express';",
       "import { Logger } from '@providers/logger.provider';",
       "import { validate } from '@utils/validate';",
-      "import { services } from '@services/index.service';",
       "",
       "@Controller('/$1')",
       "export class ${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g}Controller {",
-      "  private readonly logger = Logger('$2Controller');",
+      "  private readonly logger = Logger('${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g} Controller');",
       "  ",
       "  @Post('/')",
       "  async create(",
@@ -47,6 +47,7 @@
       "    @Next() next: ExpressNextFunction",
       "  ) {",
       "    try {",
+      "      const { page, limit } = serializePaginationParams(request);",
       "      return response.status(200).json({});",
       "    } catch (error) {",
       "      this.logger.fatal(error);",
