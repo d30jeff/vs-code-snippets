@@ -10,8 +10,8 @@
     "  try {",
     "",
     "  } catch (error) {",
-    "     this.logger.fatal(error);",
-    "     next(error);",
+    "    this.logger.fatal(error);",
+    "    next(error);",
     "  }",
     "}",
     ]
