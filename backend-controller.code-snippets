@@ -20,7 +20,7 @@
       "  Response,",
       "} from '@decorators/express';",
       "import { Logger } from '@providers/logger.provider';",
-      "import { validate } from '@utils/class-validator';",
+      "import { validate } from '@utils/class-validator.util';",
       "",
       "@Controller('/$1')",
       "export class ${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g}Controller {",
