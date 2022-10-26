@@ -1,0 +1,10 @@
+{
+  "Logger Class Property Decorator": {
+    "prefix": "logger",
+    "body": [
+      "@Logger()",
+      "private readonly logger: CustomLogger;",
+    ],
+    "description": "Class logger Property to make life easier"
+  }
+}
