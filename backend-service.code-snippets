@@ -2,10 +2,11 @@
   "Repository class template": {
     "prefix": "service",
     "body": [
-      "import { Logger } from '@providers/logger.provider';",
+      "import { CustomLogger, Logger } from '@utils/decorators/logger.decorator';",
       "",
       "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service {",
-      "  private readonly logger = Logger('${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g} Service');",
+      "  @Logger()",
+      "  private readonly logger: CustomLogger;",
       "  $1",
       "}",
 
