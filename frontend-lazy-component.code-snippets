@@ -1,0 +1,17 @@
+{
+  "component": {
+    "prefix": "lazycomponent",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "export default function $TM_FILENAME_BASE() {",
+      "  return (",
+      "    <main>",
+      "      $TM_FILENAME_BASE $2",
+      "    </main>",
+      "  );",
+      "}"
+    ],
+    "description": "Generate Lazy Component Boilerplate based on file name"
+  }
+}
