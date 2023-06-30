@@ -66,6 +66,10 @@
         "  delete(params: Prisma.${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g}DeleteArgs, connection: Prisma.TransactionClient = database.write) {",
         "    return connection.${TM_FILENAME/(.*).repository.ts/${1:/camelcase}/g}.delete(params);",
         "  }",
+        "",
+        "  deleteMany(params: Prisma.${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g}DeleteManyArgs, connection: Prisma.TransactionClient = database.write) {",
+        "    return connection.${TM_FILENAME/(.*).repository.ts/${1:/camelcase}/g}.deleteMany(params);",
+        "  }",
       "}",
     ]
   }
