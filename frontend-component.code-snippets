@@ -4,14 +4,14 @@
     "body": [
       "import { FC } from 'react';",
       "",
-      "type Props = {$1};",
+      "type Props = unknown;",
       "export const $TM_FILENAME_BASE: FC<Props> = (props) => {",
       "  return (",
       "    <div>",
       "      $TM_FILENAME_BASE $2",
       "    </div>",
       "  );",
-      "}"
+      "};"
     ],
     "description": "Generate Component Boilerplate based on file name"
   }
