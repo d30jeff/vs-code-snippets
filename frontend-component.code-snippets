@@ -2,10 +2,10 @@
   "component": {
     "prefix": "component",
     "body": [
-      "import { FC } from 'react';",
+      "import { FC, PropsWithChildren } from 'react';",
       "",
       "type Props = unknown;",
-      "export const $TM_FILENAME_BASE: FC<Props> = (props) => {",
+      "export const $TM_FILENAME_BASE: FC<PropsWithChildren<Props>> = (props) => {",
       "  return (",
       "    <div>",
       "      $TM_FILENAME_BASE $2",
