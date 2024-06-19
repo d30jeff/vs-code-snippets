@@ -3,7 +3,7 @@
     "prefix": "repo",
     "body": [
       "import { Prisma, ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g} } from '@prisma/client';",
-      "import { database } from '@providers/database.provider';",
+      "import { database } from '@/providers/database.provider.js';",
       "import { Service } from 'typedi';",
       "",
       "const fields = {",
