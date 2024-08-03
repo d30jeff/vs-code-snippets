@@ -2,7 +2,7 @@
   "Repository class template": {
     "prefix": "service",
     "body": [
-      "import { CustomLogger, Logger } from '@providers/logger.provider';",
+      "import { CustomLogger, Logger } from '@/providers/logger.provider';",
       "import { Service } from 'typedi';",
       "",
       "@Service()",

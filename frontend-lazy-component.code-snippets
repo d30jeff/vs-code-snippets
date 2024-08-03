@@ -3,11 +3,10 @@
     "prefix": "lazycomponent",
     "body": [
       "import { ComponentType } from 'react';",
-      "import { PageProps } from '@interfaces/application.interface';",
       "",
-      "type Props = PageProps;",
+      "type Props = unknown;",
       "",
-      "function $TM_FILENAME_BASE(props: PageProps) {",
+      "export default function $TM_FILENAME_BASE(props: Props) {",
       "  return (",
       "    <main>",
       "      $TM_FILENAME_BASE $2",
@@ -15,7 +14,6 @@
       "  );",
       "}",
       "",
-      "export default $TM_FILENAME_BASE as ComponentType<Props>;"
     ],
     "description": "Generate Lazy Component Boilerplate based on file name"
   }
