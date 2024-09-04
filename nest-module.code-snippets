@@ -1,0 +1,13 @@
+{
+  "Nest Module Class": {
+    "prefix": "nsmodule",
+    "body": [
+      "import { Module } from '@nestjs/common';",
+      "",
+      "@Module({})",
+      "export class ${TM_FILENAME/(.*).module.ts/${1:/pascalcase}/g}Module {",
+      "  $1",
+      "}",
+    ]
+  }
+}
