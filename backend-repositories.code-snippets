@@ -4,7 +4,7 @@
     "body": [
       "import { Prisma, ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g} } from '@prisma/client';",
       "import { database } from '@/providers/database.provider.js';",
-      "import { Service } from 'typedi';",
+      "import { Injectable } from '@decorators/di';",
       "",
       "const fields = {",
       "  ID: true,",
@@ -34,7 +34,7 @@
       "    ? ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g}WithPublicFields",
       "    : ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g};",
       "",
-      "@Service()",
+      "@Injectable()",
       "export class ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g}Repository {",
       "  aggregate(",
       "    params: Prisma.${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g}AggregateArgs,",

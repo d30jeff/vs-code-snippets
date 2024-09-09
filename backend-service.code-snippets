@@ -2,10 +2,10 @@
   "Repository class template": {
     "prefix": "service",
     "body": [
-      "import { CustomLogger, Logger } from '@/providers/logger.provider';",
-      "import { Service } from 'typedi';",
+      "import { CustomLogger, Logger } from '@/providers/logger.provider.js';",
+      "import { Injectable } from '@decorators/di';",
       "",
-      "@Service()",
+      "@Injectable()",
       "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service {",
       "  @Logger()",
       "  private readonly logger: CustomLogger;",
