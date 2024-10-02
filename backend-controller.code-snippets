@@ -1,5 +1,6 @@
 {
   "Controller class template": {
+    "scope": "typescript",
     "prefix": "controller",
     "body": [
       "import { serializePaginationParams } from '@/utils/pagination.util.js';",

@@ -1,5 +1,6 @@
 {
   "Repository class template": {
+    "scope": "typescript",
     "prefix": "service",
     "body": [
       "import { CustomLogger, Logger } from '@/providers/logger.provider.js';",

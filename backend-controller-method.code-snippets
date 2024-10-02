@@ -1,5 +1,6 @@
 {
   "Controller method": {
+    "scope": "typescript",
     "prefix": "method",
     "body": [
     "async $1(",

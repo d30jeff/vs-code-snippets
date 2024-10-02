@@ -1,5 +1,6 @@
 {
   "Log fatal messages": {
+    "scope": "typescript",
     "prefix": "fatal",
     "body": ["this.logger.fatal($1)"],
     "description": "Signale instance fatal logger"

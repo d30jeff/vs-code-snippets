@@ -1,5 +1,6 @@
 {
   "Logger Class Property Decorator": {
+    "scope": "typescript",
     "prefix": "logger",
     "body": [
       "@Logger()",

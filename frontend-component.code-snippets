@@ -1,11 +1,12 @@
 {
   "component": {
+    "scope": "typescriptreact",
     "prefix": "component",
     "body": [
       "import { FC, PropsWithChildren } from 'react';",
       "",
-      "type Props = unknown;",
-      "export const $TM_FILENAME_BASE: FC<PropsWithChildren<Props>> = (props) => {",
+      "type ${TM_FILENAME_BASE}Props = unknown;",
+      "export const $TM_FILENAME_BASE: FC<PropsWithChildren<${TM_FILENAME_BASE}Props>> = (props) => {",
       "  return (",
       "    <div>",
       "      $TM_FILENAME_BASE $2",

@@ -1,5 +1,6 @@
 {
   "Log success messages": {
+    "scope": "typescript",
     "prefix": "success",
     "body": ["this.logger.success($1)"],
     "description": "Signale instance success logger"
