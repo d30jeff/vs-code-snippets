@@ -1,0 +1,11 @@
+{
+  "Namespace Template": {
+    "scope": "typescript",
+    "prefix": "ns",
+    "body": [
+      "export namespace ${1:${TM_FILENAME/(.*).interface.ts/${1:/pascalcase}/g}} {",
+      "  $2",
+      "}",
+    ]
+  }
+}

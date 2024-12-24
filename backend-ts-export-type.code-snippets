@@ -1,0 +1,9 @@
+{
+  "Export type": {
+    "scope": "typescript",
+    "prefix": "et",
+    "body": [
+      "export type $1 = {$2}",
+    ]
+  }
+}
