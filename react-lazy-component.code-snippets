@@ -1,7 +1,7 @@
 {
   "component": {
     "scope": "typescriptreact",
-    "prefix": "lazycomponent",
+    "prefix": ["rpage", "rlazycomponent"],
     "body": [
       "import { ComponentType } from 'react';",
       "",
@@ -14,7 +14,7 @@
       "    </main>",
       "  );",
       "}",
-      "",
+      ""
     ],
     "description": "Generate Lazy Component Boilerplate based on file name"
   }

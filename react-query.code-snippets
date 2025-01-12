@@ -1,0 +1,24 @@
+{
+  "Generate Query class based on file name": {
+    "scope": "typescript",
+    "prefix": "rquery",
+    "body": [
+      "import { useQuery } from '@tanstack/react-query';",
+      "import { api } from '@/api/index.api';",
+      "",
+      "export class ${TM_FILENAME/(.*).queries.ts/${1:/pascalcase}/g}Queries {",
+      "",
+      "  list() {",
+      "    return useQuery({",
+      "      queryFn: () => {",
+      "        return api.${TM_FILENAME/(.*).queries.ts/${1:/camelcase}/g}.list();",
+      "      },",
+      "    queryKey: ['list-${TM_FILENAME/(.*).queries.ts/${1:/downcase}/g}'],",
+      "    });",
+      "  }",
+      "  $2",
+      "}",
+      ""
+    ]
+  }
+}

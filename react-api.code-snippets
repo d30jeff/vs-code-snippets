@@ -1,0 +1,18 @@
+{
+  "Generate API class based on file name": {
+    "scope": "typescript",
+    "prefix": "rapi",
+    "body": [
+      "import { HttpClient } from '@/providers/http-client.provider';",
+      "",
+      "export class ${TM_FILENAME/(.*).api.ts/${1:/pascalcase}/g}Api extends HttpClient {",
+      "  constructor() {",
+      "    super();",
+      "  }",
+      "",
+      "  $2",
+      "}",
+      ""
+    ]
+  }
+}

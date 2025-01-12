@@ -1,7 +1,7 @@
 {
   "component": {
     "scope": "typescriptreact",
-    "prefix": "component",
+    "prefix": "rcomponent",
     "body": [
       "import { FC, PropsWithChildren } from 'react';",
       "",
