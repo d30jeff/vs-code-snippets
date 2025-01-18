@@ -7,8 +7,10 @@
       "import { Injectable } from '@decorators/di';",
       "",
       "@Injectable()",
-      "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service {",
-      "  constructor(private readonly loggerService: LoggerService) {}",
+      "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service extends LoggerService {",
+      "  constructor() {",
+      "    super(${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service.name);",
+      "  }",
       "  $1",
       "}"
     ]
