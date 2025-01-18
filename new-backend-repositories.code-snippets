@@ -1,7 +1,7 @@
 {
   "New Repository Class Template": {
     "scope": "typescript",
-    "prefix": "repository",
+    "prefix": "nrepo",
     "body": [
       "import { Prisma, ${TM_FILENAME/(.*).repository.ts/${1:/pascalcase}/g} } from '@prisma/client';",
       "import { DefaultArgs } from '@prisma/client/runtime/library';",

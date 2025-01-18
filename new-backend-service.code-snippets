@@ -1,0 +1,16 @@
+{
+  "Repository class template": {
+    "scope": "typescript",
+    "prefix": "nservice",
+    "body": [
+      "import { LoggerService } from '@/shared/services/logger/logger.service.js';",
+      "import { Injectable } from '@decorators/di';",
+      "",
+      "@Injectable()",
+      "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service {",
+      "  constructor(private readonly loggerService: LoggerService) {}",
+      "  $1",
+      "}"
+    ]
+  }
+}
