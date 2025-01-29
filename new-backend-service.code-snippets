@@ -9,7 +9,7 @@
       "@Injectable()",
       "export class ${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service extends LoggerService {",
       "  constructor() {",
-      "    super(${TM_FILENAME/(.*).service.ts/${1:/pascalcase}/g}Service.name);",
+      "    super();",
       "  }",
       "  $1",
       "}"
