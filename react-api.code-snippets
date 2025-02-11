@@ -3,7 +3,7 @@
     "scope": "typescript",
     "prefix": "rapi",
     "body": [
-      "import { HttpClient } from '@/providers/http-client.provider';",
+      "import { HttpClient } from '@/models/http-client.model';",
       "",
       "export class ${TM_FILENAME/(.*).api.ts/${1:/pascalcase}/g}Api extends HttpClient {",
       "  constructor() {",
