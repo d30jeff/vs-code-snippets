@@ -30,7 +30,7 @@
       "export class ${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g}Controller extends LoggerService {",
       "",
       "  constructor() {",
-      "    super(${TM_FILENAME/(.*).controller.ts/${1:/pascalcase}/g}Controller.name)",
+      "    super()",
       "  }",
       "",
       "  @Post('/')",
