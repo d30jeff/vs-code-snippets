@@ -1,0 +1,34 @@
+{
+  "Export type": {
+    "scope": "yaml",
+    "prefix": "docker:mssql",
+    "body": [
+      "services:",
+      "  mssql:",
+      "    platform: linux/amd64",
+      "    image: mcr.microsoft.com/mssql/server:2019-latest",
+      "    environment:",
+      "      - ACCEPT_EULA=Y",
+      "      - SA_PASSWORD=Password123",
+      "    ports:",
+      "      - ${DOCKER_DATABASE_PORT}:1433",
+      "    volumes:",
+      "      - ./data/mssql:/var/opt/mssql",
+      "    networks:",
+      "      - $1_network",
+      "  redis:",
+      "    image: redis:6.2.0-alpine",
+      "    restart: always",
+      "    env_file: ./.env",
+      "    ports:",
+      "      - '${DOCKER_REDIS_PORT}:6379'",
+      "    networks:",
+      "      - $1_network",
+      "",
+      "networks:",
+      "  $1_network:",
+      "    name: $1_network",
+      "    driver: bridge"
+    ]
+  }
+}

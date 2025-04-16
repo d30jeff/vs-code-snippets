@@ -7,7 +7,7 @@
       "@Module({})",
       "export class ${TM_FILENAME/(.*).module.ts/${1:/pascalcase}/g}Module {",
       "  $1",
-      "}",
+      "}"
     ]
   }
 }
