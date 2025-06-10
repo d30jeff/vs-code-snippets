@@ -1,0 +1,9 @@
+{
+  "TypeScript const export": {
+    "scope": "typescript",
+    "prefix": "tt",
+    "body": [
+      "export type $1 = (typeof $1)[keyof typeof $1]",
+    ]
+  }
+}

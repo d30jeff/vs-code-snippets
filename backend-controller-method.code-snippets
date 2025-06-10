@@ -1,7 +1,7 @@
 {
   "Controller method": {
     "scope": "typescript",
-    "prefix": "method",
+    "prefix": "backend:method",
     "body": [
     "async $1(",
     "  @Request() request: ExpressRequest,",

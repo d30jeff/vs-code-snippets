@@ -29,6 +29,7 @@
       "  $1_network:",
       "    name: $1_network",
       "    driver: bridge"
-    ]
+    ],
+    "description": "Creates MSSQL, and Redis service in docker-compose.yaml file"
   }
 }

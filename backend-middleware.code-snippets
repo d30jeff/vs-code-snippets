@@ -1,0 +1,33 @@
+{
+  "Backend Middleware": {
+    "scope": "typescript",
+    "prefix": "middleware",
+    "body": [
+      "import { Injectable } from '@decorators/di';",
+      "import { Middleware } from '@decorators/express';",
+      "",
+      "import { type CustomLogger, Logger } from '@/core/utils/logger.util.js';",
+      "import {",
+      "  ExpressNextFunction,",
+      "  ExpressRequest,",
+      "  ExpressResponse,",
+      "} from '@/interfaces/express.interface.js';",
+      "export function $1() {",
+      "  @Injectable()",
+      "  class $1Middleware implements Middleware {",
+      "    @Logger()",
+      "    logger: CustomLogger;",
+      "    constructor() {}",
+
+      "    async use(request: ExpressRequest, response: ExpressResponse, next: ExpressNextFunction) {",
+      "      try {",
+      "      } catch (error) {",
+
+      "       }",
+      "    }",
+      "  }",
+      "  return $1Middleware;",
+      "}",
+    ]
+  }
+}

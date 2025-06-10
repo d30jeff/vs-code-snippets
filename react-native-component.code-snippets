@@ -1,0 +1,20 @@
+{
+  "component": {
+    "scope": "typescriptreact",
+    "prefix": "rncomponent",
+    "body": [
+      "import { FC, PropsWithChildren } from 'react';",
+      "import { Text, View } from 'react-native';",
+      "",
+      "type ${TM_FILENAME_BASE}Props = unknown;",
+      "export const $TM_FILENAME_BASE: FC<PropsWithChildren<${TM_FILENAME_BASE}Props>> = (props) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>$TM_FILENAME_BASE $2</Text>",
+      "    </View>",
+      "  );",
+      "};"
+    ],
+    "description": "Generate React Natice component based on file name"
+  }
+}
